@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title> EDIT POST </Title>  
+        <link rel="stylesheet" href="/css/styles.css"> 
+    </head>
+    <body>
+
+        <h1> EDIT POST</h1>
+
+        <form action = "/edit/<%= post.id %>" method = "POST">
+            <input name = "title" type = "text" value = "<%= post.title %>" required>
+            <textarea name = "content" required><%= post.content %></textarea>
+
+
+            <button type = "submit">SAVE</button>
+        </form> 
+    </body>
+</html>
